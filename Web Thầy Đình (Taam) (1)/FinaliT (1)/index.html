@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <script src="./javascript/product.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./assets/img/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body
+    onload="listDataTop(),listDataMid(), listDataBot1() ,listDataTopRight(),listDataTopRight1(),listDataTopRight2(),listChuDe()">
+    <div class="banner">
+
+        <div class="banner-middle">
+            <div class="container">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="title">
+                    <p>EDUCATION <br> NEWS</p>
+                </div>
+
+                <div class="banner-search">
+                    <div class="search">
+                        <input class="form txtsearch" placeholder="search...">
+                        <div class="icon-sreach">
+                            <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-login">
+                    <div class="icon">
+                        <a href="http://127.0.0.1:8887/Login/loginsignup%20.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i class="fa-solid fa-right-to-bracket"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="heard-nav">
+        <div class="container">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-heading home" data-zoneid="0">
+                        <i class="fa-solid fa-house-chimney"></i></a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-heading selected" href="#">Giáo dục 24h</a>
+                    <ul class="submenu">
+                        <a class="menu-heading selected" href="https://giaoduc.net.vn/tin-hiep-hoi/">Tin hiệp hội</a>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-heading"href="https://giaoduc.net.vn/tieu-diem/">Tiêu điểm</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-heading " href="https://giaoduc.net.vn/goc-nhin/">Góc nhìn</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-heading " href="https://giaoduc.net.vn/du-hoc/">Du học</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-heading " href="https://giaoduc.net.vn/suc-khoe-hoc-duong/">Sức khỏe học đường</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-heading " href="https://giaoduc.net.vn/van-hoa/" title="Văn hóa">Văn hóa</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-heading " href="https://giaoduc.net.vn/kinh-te/">Kinh tế</a>
+                    <ul class="submenu">
+                        <a class="menu-heading selected" href="#">Thông tin cần biết</a>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="data">
+        <div class="container">
+            <div class="topData">
+                <div class="left-data">
+                    <div class="data-top-left">
+                        <div top-title>
+                            24-HOUR EDUCATION
+                            <hr>
+                        </div>
+                        <div class="img-title" id="img-title">
+
+                        </div>
+                    </div>
+                    <div class="data-mid-left">
+                        <div class="row" style="margin-right: 5px;" id="data-mid">
+                            <div class="col-md-12" >
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-bot-left">
+                        <div class="bot-data" id="data-bot1">
+
+                        </div>
+                    
+                    </div>
+                    <div class="button-left">
+                        <button onclick=" addDatabot()" type="button" id="load-more-btn">Xem tiếp</button>
+                    </div>
+                </div>
+                <div class="data-right">
+                    <div class="data-top-right">
+                        <div class="data-top-righta" id="a"></div>
+                    </div>
+                    <br>
+                    <div class="data-top-right1">
+                        <div class="data-top-rightb" id="b"></div>
+                    </div>
+                    <br>
+                    <div class="data-top-right3">
+                        <div class="data-top-rightc" id="c"></div>
+                    </div>
+                    <br>
+                    <div class="data-mid-right">
+                        <div class="title-mid-right">
+                            <p>CHỦ ĐỀ NỔI BẬT</p>
+                        </div>
+                        <div class="menu-mid-right" id="chude">
+                            
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="container-fluid" style="background-color:#0e5d9d;height: 150px; padding-top: 20px;">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3" style="color:#f8f9fa;">© Tạp chí giáo dục Việt Nam<br>
+                Cơ quan chủ quản: Hiệp hội các Trường đại học, cao đẳng Việt Nam. <br>
+                Giấy phép số: 74/GP-BTTTT ngày 26/02/2020. <br>
+                Phó Chủ tịch Hiệp hội, Tổng Biên tập: Nguyễn Tiến Bình. <br>
+                Cấm sao chép dưới mọi hình thức nếu không có sự chấp thuận bằng văn bản.</div>
+            <div class="col-1"></div>
+            <div class="col-3" style="color: #f8f9fa ; "> <br>
+                <i class="fa-solid fa-location-dot" style="font-size: 80%;"></i> Tầng 6B,tòa nhà số 14 Hàm Long,phường Phan Chu Trinh, <br>
+                quận Hoàn Kiếm, Hà Nội. <br>
+                <i class="fa-solid fa-phone" style="font-size: 70%;"></i>  Liên hệ: 0938.766.888 - 0243.5569666 <br>
+                <i class="fa-solid fa-envelope" style="font-size: 70%;"></i><a href="mailto:toasoan@giaoduc.net.vn" style="color:#f8f9fa;">
+                    Email: toasoan@giaoduc.net.vn</a>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

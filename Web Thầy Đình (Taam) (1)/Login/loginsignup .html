@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="loginsignup.css">
+
+    <!-- boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+
+                <form action="">
+
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="email">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                        <i class='bx bx-hide eye-icon' ></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password ?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="submit" onclick="login()">Login</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Already have an account ? <a href="#" class="link signup-link">Signup</a></span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="data:image/png;base64,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" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+        <!-- Signup Form -->
+        <div class="form signup">
+            <div class="form-content">
+                <header>Registration</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="name" placeholder="Name" class="name">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="email">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create Password" class="password">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder=" Confirm Password" class="password">
+                        <i class='bx bx-hide eye-icon' ></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="submit" onclick="signup()">Signup</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account ? <a href="#" class="link login-link">Login</a></span>
+                </div>
+
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="data:image/png;base64,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" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Javascript -->
+    <script src="loginsignup.js"></script>
+</body>
+</html>
