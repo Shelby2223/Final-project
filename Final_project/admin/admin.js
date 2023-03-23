@@ -11,8 +11,6 @@ function callAPI(endpoint, method = "GET", body) {
         });
 }
 
-
-
 function btnleft() {
     document.getElementById("wrapper").style.display = "block";
 
@@ -72,12 +70,7 @@ async function appendData(_datarightjson) {
         console.error(error);
     }
 };
-
-
-
-
-// them du lieu vao top_web
-// Thêm dữ liệu top vào mock
+// Thêm dữ liệu top_top vào mock
 fetch('top_top.json')
     .then(function (response) {
         return response.json();
@@ -228,7 +221,7 @@ async function appendData(_databotjson) {
     }
 };
 
-// thêm vào mock dữ liệu của chủ đề nổi bật
+// thêm dữ liệu chủ đề nổi bật vào mock
 fetch('chudenoibat.json')
     .then(function (response) {
         return response.json();
